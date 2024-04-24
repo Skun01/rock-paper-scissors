@@ -1,7 +1,7 @@
 /**
- * rock == 1
- * paper == 2
- * scissors == 3
+ * rock == 0
+ * paper == 1
+ * scissors == 2
  */
 const containElem = document.querySelector('.container');
 
@@ -12,4 +12,12 @@ containElem.addEventListener('click', event =>{
     console.log(humanChoice);
 });
 //take choice of computer
+let computerChoice = '';
+let digitChoice;
+containElem.addEventListener('click', event =>{
+    digitChoice = Math.round(Math.random()*2);
+    computerChoice = digitChoice === 0 ? 'rock' : digitChoice === 1 ? 'paper' : 'scissors';
+});
+
+
 // compare two choice and give result
