@@ -38,3 +38,11 @@ containElem.addEventListener('click', () =>{
     }
     alert(`you ${output} computer`);
 })
+
+// reset the game
+let resetElem = document.querySelector('#reset');
+resetElem.addEventListener('click', () =>{
+    winElem.textContent = 0;
+    loseElem.textContent = 0;
+    drawElem.textContent = 0;
+})
