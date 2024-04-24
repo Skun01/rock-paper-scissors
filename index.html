@@ -5,8 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        body{
+            background-color: rgb(2, 2, 59);
+            flex-direction: column;
             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 600px;
+            display: flex;
+            background-color: white;
+            height: 200px;
+            justify-content: center;
+            gap: 20px;
+        }
+        .container .choice{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .btn{
+            outline: none;
+            padding: 5px 15px;
+            color: white;
+            cursor: pointer;
+            background-color: red;
+        }
+        .container .desc{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+        .result-section{
+            color: white;
+            width: 600px;
+            text-align: left;
+            padding: 5px 0;
         }
     </style>
 </head>
